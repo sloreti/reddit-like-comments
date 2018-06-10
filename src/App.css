@@ -1,21 +1,12 @@
-.App {
-  text-align: center;
+body {
+  background-color: #eee;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
+.comment-section {
+  background-color: white;
+  margin: 2% auto;
+  width: 96%;
+  padding: 20px 0px;
 }
 
 .flex {
@@ -23,7 +14,7 @@
 }
 
 .comment {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .username {
