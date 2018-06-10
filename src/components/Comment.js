@@ -2,14 +2,13 @@ import React,  { Component } from 'react';
 
 export default class Comment extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      optimisticUpdate: 0
-    }
-    this.vote = this.vote.bind(this)
-  }
-
+  state = { optimisticUpdate: 0 };
+  vote = this.vote.bind(this);
+  userLookup = this.userLookup.bind(this);
+  
+  userLookup(id) {
+    return this.props.users.find( u => u.id === id ).username
+  } 
 
   vote(optimisticUpdate) {
     if (optimisticUpdate === this.state.optimisticUpdate) {
@@ -23,7 +22,22 @@ export default class Comment extends Component {
   elapsedTime() {
     var createdAt = new Date(this.props.createdAt)
     var now = new Date()
-    return now - createdAt;
+    return this.simplePrettyTime(now - createdAt);
+  }
+
+  simplePrettyTime(ms) {
+    ms = Math.abs(ms)
+    if (ms >= 1000*60*60*24*365) {
+      return Math.floor(ms / (1000*60*60*24*365)) + " years"
+    } else if (ms >= 1000*60*60*24*30) {
+      return Math.floor(ms / (1000*60*60*24*30)) + " months"
+    } else if (ms >= 1000*60*60*24) {
+      return Math.floor(ms / (1000*60*60*24)) + " days"
+    } else if (ms >= 1000*60*60) {
+      return Math.floor(ms / (1000*60*60)) + " hours"
+    } else {
+      return Math.floor(ms / (1000*60)) + " minutes"
+    }
   } 
 
   render() {
@@ -35,9 +49,9 @@ export default class Comment extends Component {
             vote={this.vote} 
           />
     	    <div>
-    	    	<a className="username">{this.props.user}</a>
-            <span className="points">{this.state.points}</span>
-            <span className="createdAt">{this.elapsedTime()}</span>
+    	    	<a className="username">{this.userLookup(this.props.user)}</a>
+            <span className="points">{this.props.initialPoints + this.state.optimisticUpdate} points</span>
+            <span className="createdAt">{this.elapsedTime()} ago</span>
             <span className="showHide">[-]</span>
     	    	<p>{this.props.text}</p>
     	    </div>
@@ -52,6 +66,7 @@ export default class Comment extends Component {
               text={comment.text}
               user={comment.user}
               comments={comment.comments}
+              users={this.props.users}
             />
           )
         }

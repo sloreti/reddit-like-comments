@@ -5,7 +5,6 @@ export default function CommentSection(props) {
 
   return (
     <div className="comment-section">
-      Comments
       {
         props.data.map((comment) =>
           <Comment
@@ -16,6 +15,7 @@ export default function CommentSection(props) {
             text={comment.text}
             user={comment.user}
             comments={comment.comments}
+            users={props.users}
           />
         )
       }
