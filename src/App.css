@@ -36,3 +36,16 @@
 .createdAt {
   margin-right: 0.5em;
 }
+
+.upvote,
+.downvote {
+  color: gray;
+}
+
+.upvote.active {
+  color: #ff8b60;
+}
+
+.downvote.active {
+  color: #9493ff;
+}
