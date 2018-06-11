@@ -17,20 +17,29 @@ body {
   margin-left: 30px;
 }
 
-.username {
+.username.smallType {
   color: #369;
   font-weight: bold;
 }
 
-.username,
-.points,
-.createdAt {
+.smallType,
+.voteCol {
   margin-right: 0.5em;
+}
+
+.smallType {
+  color: gray;
+  font-size: 0.8em;
+}
+
+.singleComment {
+  margin-bottom: 0.5rem;
 }
 
 .upvote,
 .downvote {
   color: gray;
+  cursor: pointer;
 }
 
 .upvote.active {
@@ -39,4 +48,13 @@ body {
 
 .downvote.active {
   color: #9493ff;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }

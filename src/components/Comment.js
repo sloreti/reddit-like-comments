@@ -40,7 +40,7 @@ export default class Comment extends Component {
 
     return (
     	<div  className="comment">
-        <div className="flex">
+        <div className="flex singleComment">
           <VoteCol 
             optimisticUpdate={optimisticUpdate}
             onUpvote={this.props.onUpvote}
@@ -48,11 +48,10 @@ export default class Comment extends Component {
             indexArr={this.props.indexArr}
           />
     	    <div>
-    	    	<a className="username">{this.userLookup(this.props.comment.user)}</a>
-            <span className="points">{this.props.comment.points + optimisticUpdate} points</span>
-            <span className="createdAt">{this.elapsedTime()} ago</span>
-            <span className="showHide">[-]</span>
-    	    	<p>{this.props.comment.text}</p>
+    	    	<a className="username smallType">{this.userLookup(this.props.comment.user)}</a>
+            <span className="smallType">{this.props.comment.points + optimisticUpdate} points</span>
+            <span className="smallType">{this.elapsedTime()} ago</span>
+    	    	<div>{this.props.comment.text}</div>
     	    </div>
         </div>
   	    {
@@ -86,7 +85,7 @@ function VoteCol(props) {
   }
 
   return (
-    <div>
+    <div className="voteCol noselect">
       <div className={isUpvoted ? 'upvote active' : 'upvote'} onClick={onUpvote}>
         ▲
       </div>
