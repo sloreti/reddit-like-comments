@@ -3,6 +3,10 @@ import React,  { Component } from 'react';
 export default class Comment extends Component {
 
   userLookup = this.userLookup.bind(this);
+
+  shouldComponentUpdate(nextProps) {
+    return this.props.comment.renderNeededAt !== nextProps.comment.renderNeededAt
+  }
   
   userLookup(id) {
     return this.props.users.find( u => u.id === id ).username

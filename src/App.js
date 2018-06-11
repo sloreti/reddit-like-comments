@@ -80,10 +80,11 @@ export default class App extends Component {
 
   vote(indexArr, val) {
 
-    var DATA = [...this.state.DATA]
+    var DATA = JSON.parse(JSON.stringify(this.state.DATA))
     var comments = DATA
     for (let index of indexArr) {
       var comment = comments[index]
+      comment.renderNeededAt = Date.now()
       comments = comment.comments
     }
 
