@@ -6,7 +6,7 @@ This repo contains a React implementation of Reddit-like comments. It consists o
   * **Comment**: A component representing an individual comment and its descendants.
   * **VoteCol**: A small functional component representing the voting controls. Also in Comment.js.
 
-#### Install and Run
+### Install and Run
 From root dir
 ``` bash
 npm install
@@ -17,10 +17,10 @@ npm start # for developer mode, or
 npm run build # for production
 ```
 
-#### Voting
+### Voting
 Voting is performed by setting an `optimisticUpdate` field in an individual comment to 1, 0, or -1. **App's** `vote()` function exactly mimics how voting works on Reddit, allowing votes, cancellation of votes, and preventing double votes. The **VoteCol** component receives this field as a prop and conditionally renders `className=active` accordingly. Where we optimistically update the UI in `vote()` is where we would also make an API call (POST /vote/{commentId}/ ?) in a real application. 
 
-#### Performance Considerations
+### Performance Considerations
 To improve performance, a **Comment** component receives the prop `indexArr`, which is an array of indices keeping track of where it is in the `state.data` comment tree. Thus when a user clicks an upvote or downvote arrow, the **App's** `vote()` function does not have to traverse a large comment tree looking for the correct comment `id`, it can index directly into the nested comment. By consuming a bit more memory to maintain `indexArr`s, we save on computation.
 
 
@@ -29,7 +29,7 @@ But this leads to another easy pitfall: when `state.data` is updated, all **Comm
 
 Profiled in Chrome Dev Tools, this optimization leads to about a **2.5x speed up** (mean of 66ms vs. mean of 166ms when tested with 100 comments, mean of 122ms vs. mean of 295ms when tested with 200 comments). 
 
-#### Additional Comments
+### Additional Comments
 Facebook's Create-React-App was chosen as a starter kit because, in addition to Webpack and Babel, it includes important libraries I use during development like ESLint and Jest.
 
 A simple snapshot test with Jest is included in App.test.js. It demonstrates clicking an upvote twice. Unit tests of **Comment's** `simplePrettyTime()` are included in Comment.test.js.
