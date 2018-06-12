@@ -35,7 +35,6 @@ export default class Comment extends Component {
 
   render() {
 
-    console.log(`${this.props.comment.id} just rendered`);
     var optimisticUpdate = this.props.comment.optimisticUpdate ? this.props.comment.optimisticUpdate : 0
 
     return (

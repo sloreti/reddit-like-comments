@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Comment from './components/Comment'
+import CommentSection from './components/CommentSection'
 import './App.css';
 
 export default class App extends Component {
 
   state = {
-    USERS: [
+    users: [
       {
         id: 1,
         username: "gagabriel"
@@ -15,7 +15,7 @@ export default class App extends Component {
         username: "intergalactic"
       }
     ],
-    DATA: [
+    data: [
       {
         id: 123,
         points: 20,
@@ -80,8 +80,8 @@ export default class App extends Component {
 
   vote(indexArr, val) {
 
-    var DATA = JSON.parse(JSON.stringify(this.state.DATA))
-    var comments = DATA
+    var data = JSON.parse(JSON.stringify(this.state.data))
+    var comments = data
     for (let index of indexArr) {
       var comment = comments[index]
       comment.renderNeededAt = Date.now()
@@ -95,25 +95,17 @@ export default class App extends Component {
         comment.optimisticUpdate = val
       }
     }
-    this.setState({ DATA })
+    this.setState({ data })
   }
 
   render() {
     return (
-      <div className="comment-section">
-        {
-          this.state.DATA.map((comment, index) =>
-            <Comment
-              key={comment.id}
-              comment={comment}
-              users={this.state.USERS}
-              onUpvote={this.onUpvote}
-              onDownvote={this.onDownvote}
-              indexArr={[index]}
-            />
-          )
-        }
-      </div>
+      <CommentSection 
+        users={this.state.users}
+        data={this.state.data}
+        onUpvote={this.onUpvote}
+        onDownvote={this.onDownvote}
+      />
     );
   }
 }
