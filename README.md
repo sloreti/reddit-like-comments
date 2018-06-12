@@ -6,8 +6,19 @@ This repo contains a React implementation of Reddit-like comments. It consists o
   * **Comment**: A component representing an individual comment and its descendants.
   * **VoteCol**: A small functional component representing the voting controls. Also in Comment.js.
 
+#### Install and Run
+From root dir
+``` bash
+npm install
+```
+and then
+``` bash
+npm start # for developer mode, or
+npm run build # for production
+```
+
 #### Voting
-Voting is performed by setting an `optimisticUpdate` field in an individual comment to 1, 0, or -1. **App's** `vote()` function exactly mimics how voting works on Reddit, allowing votes, cancellation of votes, and preventing double votes. The **VoteCol** component recevies this field as a prop and conditionally renders `className=active` accordingly. Where we optimistically update the UI in `vote()` is where we would also make an API call (POST /vote/{commentId}/ ?) in a real application. 
+Voting is performed by setting an `optimisticUpdate` field in an individual comment to 1, 0, or -1. **App's** `vote()` function exactly mimics how voting works on Reddit, allowing votes, cancellation of votes, and preventing double votes. The **VoteCol** component receives this field as a prop and conditionally renders `className=active` accordingly. Where we optimistically update the UI in `vote()` is where we would also make an API call (POST /vote/{commentId}/ ?) in a real application. 
 
 #### Performance Considerations
 To improve performance, a **Comment** component receives the prop `indexArr`, which is an array of indices keeping track of where it is in the `state.data` comment tree. Thus when a user clicks an upvote or downvote arrow, the **App's** `vote()` function does not have to traverse a large comment tree looking for the correct comment `id`, it can index directly into the nested comment. By consuming a bit more memory to maintain `indexArr`s, we save on computation.
