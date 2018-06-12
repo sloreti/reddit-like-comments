@@ -1,0 +1,712 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should upvote and then remove upvote 1`] = `
+<div
+  className="comment-section"
+>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          gagabriel
+        </a>
+        <span
+          className="smallType"
+        >
+          20
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            intergalactic
+          </a>
+          <span
+            className="smallType"
+          >
+            30
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Dolor amen
+          </div>
+        </div>
+      </div>
+      <div
+        className="comment"
+      >
+        <div
+          className="flex singleComment"
+        >
+          <div
+            className="voteCol noselect"
+          >
+            <div
+              className="upvote"
+              onClick={[Function]}
+            >
+              ▲
+            </div>
+            <div
+              className="downvote"
+              onClick={[Function]}
+            >
+              ▼
+            </div>
+          </div>
+          <div>
+            <a
+              className="username smallType"
+            >
+              intergalactic
+            </a>
+            <span
+              className="smallType"
+            >
+              12
+               points
+            </span>
+            <span
+              className="smallType"
+            >
+              2 months
+               ago
+            </span>
+            <div>
+              Vestibulum lorem purus
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            gagabriel
+          </a>
+          <span
+            className="smallType"
+          >
+            0
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          intergalactic
+        </a>
+        <span
+          className="smallType"
+        >
+          -2
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It should upvote and then remove upvote 2`] = `
+<div
+  className="comment-section"
+>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          gagabriel
+        </a>
+        <span
+          className="smallType"
+        >
+          20
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            intergalactic
+          </a>
+          <span
+            className="smallType"
+          >
+            30
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Dolor amen
+          </div>
+        </div>
+      </div>
+      <div
+        className="comment"
+      >
+        <div
+          className="flex singleComment"
+        >
+          <div
+            className="voteCol noselect"
+          >
+            <div
+              className="upvote active"
+              onClick={[Function]}
+            >
+              ▲
+            </div>
+            <div
+              className="downvote"
+              onClick={[Function]}
+            >
+              ▼
+            </div>
+          </div>
+          <div>
+            <a
+              className="username smallType"
+            >
+              intergalactic
+            </a>
+            <span
+              className="smallType"
+            >
+              13
+               points
+            </span>
+            <span
+              className="smallType"
+            >
+              2 months
+               ago
+            </span>
+            <div>
+              Vestibulum lorem purus
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            gagabriel
+          </a>
+          <span
+            className="smallType"
+          >
+            0
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          intergalactic
+        </a>
+        <span
+          className="smallType"
+        >
+          -2
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`It should upvote and then remove upvote 3`] = `
+<div
+  className="comment-section"
+>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          gagabriel
+        </a>
+        <span
+          className="smallType"
+        >
+          20
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            intergalactic
+          </a>
+          <span
+            className="smallType"
+          >
+            30
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Dolor amen
+          </div>
+        </div>
+      </div>
+      <div
+        className="comment"
+      >
+        <div
+          className="flex singleComment"
+        >
+          <div
+            className="voteCol noselect"
+          >
+            <div
+              className="upvote"
+              onClick={[Function]}
+            >
+              ▲
+            </div>
+            <div
+              className="downvote"
+              onClick={[Function]}
+            >
+              ▼
+            </div>
+          </div>
+          <div>
+            <a
+              className="username smallType"
+            >
+              intergalactic
+            </a>
+            <span
+              className="smallType"
+            >
+              12
+               points
+            </span>
+            <span
+              className="smallType"
+            >
+              2 months
+               ago
+            </span>
+            <div>
+              Vestibulum lorem purus
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="comment"
+    >
+      <div
+        className="flex singleComment"
+      >
+        <div
+          className="voteCol noselect"
+        >
+          <div
+            className="upvote"
+            onClick={[Function]}
+          >
+            ▲
+          </div>
+          <div
+            className="downvote"
+            onClick={[Function]}
+          >
+            ▼
+          </div>
+        </div>
+        <div>
+          <a
+            className="username smallType"
+          >
+            gagabriel
+          </a>
+          <span
+            className="smallType"
+          >
+            0
+             points
+          </span>
+          <span
+            className="smallType"
+          >
+            2 months
+             ago
+          </span>
+          <div>
+            Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales Nullam hendrerit quis arcu sed sodales
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="comment"
+  >
+    <div
+      className="flex singleComment"
+    >
+      <div
+        className="voteCol noselect"
+      >
+        <div
+          className="upvote"
+          onClick={[Function]}
+        >
+          ▲
+        </div>
+        <div
+          className="downvote"
+          onClick={[Function]}
+        >
+          ▼
+        </div>
+      </div>
+      <div>
+        <a
+          className="username smallType"
+        >
+          intergalactic
+        </a>
+        <span
+          className="smallType"
+        >
+          -2
+           points
+        </span>
+        <span
+          className="smallType"
+        >
+          2 months
+           ago
+        </span>
+        <div>
+          Lorem Ipsum
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

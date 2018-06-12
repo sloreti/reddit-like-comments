@@ -5,11 +5,13 @@ export default class Comment extends Component {
   userLookup = this.userLookup.bind(this);
 
   shouldComponentUpdate(nextProps) {
-    return this.props.comment.renderNeededAt !== nextProps.comment.renderNeededAt
+    // Only update if new renderNeededAt timestamp present
+    return this.props.comment.renderNeededAt !== nextProps.comment.renderNeededAt 
   }
   
   userLookup(id) {
-    return this.props.users.find( u => u.id === id ).username
+    var user = this.props.users.find( u => u.id === id )
+    return user ? user.username : ""
   } 
 
   elapsedTime() {
@@ -20,17 +22,20 @@ export default class Comment extends Component {
 
   simplePrettyTime(ms) {
     ms = Math.abs(ms)
+    var prettyTime;
     if (ms >= 1000*60*60*24*365) {
-      return Math.floor(ms / (1000*60*60*24*365)) + " years"
+      prettyTime = Math.floor(ms / (1000*60*60*24*365)) + " years"
     } else if (ms >= 1000*60*60*24*30) {
-      return Math.floor(ms / (1000*60*60*24*30)) + " months"
+      prettyTime = Math.floor(ms / (1000*60*60*24*30)) + " months"
     } else if (ms >= 1000*60*60*24) {
-      return Math.floor(ms / (1000*60*60*24)) + " days"
+      prettyTime = Math.floor(ms / (1000*60*60*24)) + " days"
     } else if (ms >= 1000*60*60) {
-      return Math.floor(ms / (1000*60*60)) + " hours"
+      prettyTime = Math.floor(ms / (1000*60*60)) + " hours"
     } else {
-      return Math.floor(ms / (1000*60)) + " minutes"
+      prettyTime = Math.floor(ms / (1000*60)) + " minutes"
     }
+    // Remove pluralization if needed and return
+    return prettyTime.split(" ")[0] === "1" ? prettyTime.slice(0,-1) : prettyTime  
   } 
 
   render() {
