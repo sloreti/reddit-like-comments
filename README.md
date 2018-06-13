@@ -43,4 +43,8 @@ A simple snapshot test with Jest is included in App.test.js. It demonstrates cli
 2. [Immutable.js](https://facebook.github.io/immutable-js/): 
    On line 83 of App.js, I use the `JSON.parse(JSON.stringify())` trick to make a copy of our current `state.data`. In the context of a larger application where we have other objects and arrays that we don't want to mutate, it may make sense to add Immutable.js as a dependency.
 
+3. [Normalizr]
+
+One of the assignment's requirements was that `data` be updated when a user votes. To do this computationally efficiently, I employed the `indexArr` trick. However, in a real application I think a case could be made to place `optimisticUpdate` in the **Comment** component's state and to never actually update `data`. Doing so would be on the far end of the spectrum of  
+
 
